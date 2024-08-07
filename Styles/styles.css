@@ -101,14 +101,151 @@ body {
     transform: scale(1.05);
 }
 
-.divsor {
-    background-image: url(../assets/img/banner468x60glow6_7560.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 58px;
-}
-
 .accordion-body ul {
     text-align: left;
 }
 
+/* Estilos para la tarjeta de precios */
+.custom-card {
+    border: 2px solid #ff6f00; /* Bordes color naranja */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.custom-card:hover {
+    transform: scale(1.05); /* Ampliar la tarjeta al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+}
+
+
+/* Estilos para el carrusel de precios en dispositivos móviles */
+
+.carousel-item {
+    flex: 1 0 100%; /* Hace que cada elemento ocupe el 100% del contenedor del carrusel */
+    transition: transform 0.5s ease;
+}
+
+.card {
+    margin: 0 auto;
+    max-width: 90%; /* Ajusta el ancho máximo en móviles */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(1);
+}
+
+/* Ajustes para el diseño del texto en el carrusel */
+.carousel-item .card-header {
+    font-size: 1.25rem;
+}
+
+.carousel-item .card-title {
+    font-size: 1.25rem;
+}
+
+/* Alinear el texto a la izquierda en la tarjeta */
+.card-list {
+    text-align: left;
+}
+
+#pricing .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#pricing .card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#pricing .card .btn {
+    margin-top: auto;
+}
+
+@media (min-width: 768px) {
+    #pricing .row > [class*='col-'] {
+        display: flex;
+    }
+}
+
+#reviews .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.review-content {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.stars i {
+    font-size: 1.5rem;
+}
+
+#cta {
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-box {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    margin-bottom: 20px;
+    
+    z-index: 1;
+}
+
+.cta-gif {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.cta-box:hover .cta-gif {
+    opacity: 1;
+}
+
+.cta-box:nth-of-type(1) .cta-gif {
+    left: -20%;
+}
+
+.cta-box:nth-of-type(2) .cta-gif {
+    left: 50%;
+}
+
+.cta-box:nth-of-type(3) .cta-gif {
+    right: -20%;
+}
+
+.accordion-button {
+    border: 1px solid #ffc107; /* Color del borde del botón */
+    color: #000000; /* Color del texto del botón */
+    background-color: #fff; /* Color de fondo del botón */
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff; /* Color del texto cuando está desplegado */
+    background-color: #ffc107; /* Color de fondo cuando está desplegado */
+}
+
+.accordion-button:focus {
+    box-shadow: none; /* Quitar el efecto de sombra al enfocar */
+}
+
+.accordion-button:hover {
+    background-color: #e0a800; /* Color de fondo al hacer hover */
+    color: #fff; /* Color del texto al hacer hover */
+}
