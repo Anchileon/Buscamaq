@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./Styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://buscamaquinaria.com/css/style.css">
+    <link rel="stylesheet" href="https://buscamaquinaria.com/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700;900&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="https://buscamaquinaria.com">
+            <img src="https://buscamaquinaria.com/images/header-logo2.svg" alt="BuscaMaquinaria" class="img-fluid" style="width:10em">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://buscamaquinaria.com/offer">Ver Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link">Vender</button>
+                </li>
+                <li class="nav-item">
+                    <form action="https://buscamaquinaria.com/lang" method="POST" class="form-inline">
+                        <input type="hidden" name="_token" value="BRx88hjQhiIrDemFloxKb5M2nEKo2uoXyqfNkUMt">
+                        <select class="form-select" name="lang" onchange="this.form.submit()">
+                            <option value="ESmx" selected>ES</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <form action="https://buscamaquinaria.com/currency" method="POST" class="form-inline">
+                        <input type="hidden" name="_token" value="BRx88hjQhiIrDemFloxKb5M2nEKo2uoXyqfNkUMt">
+                        <img src="https://buscamaquinaria.com/images/flags/us.svg" alt="USD" class="img-fluid" style="width:20px;">
+                        <select class="form-select" name="currency" onchange="this.form.submit()">
+                            <option value="USD" selected>USD</option>
+                            <option value="CAD">CAD</option>
+                            <option value="MXN">MXN</option>
+                        </select>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section 1: Main Landing -->
+    <section id="main-landing" class="text-center py-5">
+        <div class="container">
+            <h1 class="col-xl-6">Revolucioná tu Negocio</h1>
+            <h2 class="col-xl-6">Descubre la plataforma que puede transformar tus operaciones.</h2>
+            <button class="btn btn-warning mt-3">Suscribirte</button>
+            <div class="mt-4">
+                <video width="100%" autoplay muted loop>
+                    <source src="./assets/video/Video1 plataforma.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Conocé la Plataforma -->
+    <section id="conoce-la-plataforma" class="bg-light text-center py-5">
+        <div class="">
+            <h3>¿Cansado de perder tiempo gestionando tu maquinaria?</h3>
+        </div>
+    </section>
+
+
+    <!-- Section 4: Panel de Control -->
+    <section class="bg-light text-center">
+        <div class="p-3 col-12">
+            <div class="divsor"><h3>La Solución que tu Negocio Necesita</h3>
+            <p class="mb-5">Imagina poder gestionar toda tu flota, Ventas y Rentas desde una sola plataforma intuitiva. <br>Nuestro sistema no solo te ahorra tiempo, sino que también potencia tus Ventas y mejora la satisfacción de tus clientes.</p>
+            </div>
+            <div class="text-container row d-none d-md-flex">
+                <div class="col-md-4">
+                    <h3>Control de Tus Publicaciones</h3>
+                    <p>Gestiona tus anuncios y ofertas con facilidad. Mantén tu inventario actualizado en tiempo real.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Gestión Eficiente de Clientes</h3>
+                    <p>Nunca más pierdas una oportunidad de venta. Responde rápidamente a las consultas.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Seguimiento de Contacto</h3>
+                    <p>Desde el primer punto de contacto, asignar tareas, y realizar seguimientos personalizados.</p>
+                </div>
+            </div>
+            <div class="d-none d-md-flex justify-content-around">
+                <div class="image-gallery d-flex justify-content-around">
+                    <div class="image-item shadow bg-white rounded">
+                        <img src="./assets/img/Carrousel1.png" class="img-fluid" alt="Image 1">
+                    </div>
+                    <div class="image-item shadow bg-white rounded">
+                        <img src="./assets/img/Carrousel2.png" class="img-fluid" alt="Image 2">
+                    </div>
+                    <div class="image-item shadow bg-white rounded">
+                        <img src="./assets/img/Carrousel3.png" class="img-fluid" alt="Image 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Versión para dispositivos móviles -->
+    <section>
+     <div class="d-md-none">
+        <div class="row m-2">
+            <div class="col-12 d-flex flex-column align-items-center">
+                <div class="text-center mb-3">
+                    <h3>Control de Tus Publicaciones</h3>
+                    <p>Gestiona tus anuncios y ofertas con facilidad. Mantén tu inventario actualizado en tiempo real.</p>
+                </div>
+                <img src="./assets/img/Carrousel1.png" class="img-fluid shadow-lg mb-5" alt="Image 1">
+            </div>
+        </div>
+        <div class="row m-2 ">
+            <div class="col-12 d-flex flex-column align-items-center">
+                <div class="text-center mb-3">
+                    <h3>Gestión Eficiente de Clientes</h3>
+                    <p>Nunca más pierdas una oportunidad de venta. Responde rápidamente a las consultas.</p>
+                </div>
+                <img src="./assets/img/Carrousel2.png" class="img-fluid shadow-lg mb-5" alt="Image 2">
+            </div>
+        </div>
+        <div class="row m-2">
+            <div class="col-12 d-flex flex-column align-items-center">
+                <div class="text-center m-3">
+                    <h3>Seguimiento de Contacto</h3>
+                    <p>Desde el primer punto de contacto, asignar tareas, y realizar seguimientos personalizados.</p>
+                </div>
+                <img src="./assets/img/Carrousel3.png" class="img-fluid shadow-lg" alt="Image 3">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+    <!-- Section 5: Reviews -->
+    <section id="reviews" class="text-center py-5">
+        <div class="container">
+            <img src="reviewer.jpg" class="rounded-circle mb-3" alt="Reviewer" width="150">
+            <h4>Reseña de Usuario</h4>
+            <p>Opinión de un usuario satisfecho.</p>
+        </div>
+    </section>
+
+    <!-- Section 6: CTA Interactivo -->
+    <section id="cta-interactivo" class="bg-light text-center py-5">
+        <div class="container">
+            <h3>CTA Interactivo</h3>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h4>Interacción 1</h4>
+                    <p>Descripción de la interacción 1.</p>
+                    <video width="100%" autoplay muted loop>
+                        <source src="./assets/video/Video5 New public.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4>Interacción 2</h4>
+                    <p>Descripción de la interacción 2.</p>
+                    <video width="100%" autoplay muted loop>
+                        <source src="./assets/video/Video6 Catalogo.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4>Interacción 3</h4>
+                    <p>Descripción de la interacción 3.</p>
+                    <video width="100%" autoplay muted loop>
+                        <source src="./assets/video/Video7 Clientes y leads.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Por qué Elegirnos -->
+    <section id="por-que-elegirnos" class="text-center py-5">
+        <div class="container">
+            <h3>¿POR QUE ELEGIRNOS?</h3>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cómo puedo registrar mi empresa y empezar a vender en la plataforma?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Regístrate haciendo clic en "Registrarse".</li>
+                                <li>Completa el formulario con la información de tu empresa.</li>
+                                <li>Verifica tu cuenta a través del correo electrónico recibido.</li>
+                                <li>Configura tu perfil empresarial.</li>
+                                <li>Publica tus productos desde el panel de control.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Qué características de gestión de clientes ofrece la plataforma?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Panel de control centralizado.</li>
+                                <li>Seguimiento de negociaciones.</li>
+                                <li>Asignación de usuarios a clientes.</li>
+                                <li>Gestión de leads de la red y externos.</li>
+                                <li>Historial completo de interacciones con clientes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Qué medidas de seguridad están implementadas para proteger mis datos en la plataforma?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Cifrado SSL.</li>
+                                <li>Autenticación de dos factores (2FA).</li>
+                                <li>Monitorización 24/7 de actividades sospechosas.</li>
+                                <li>Cumplimiento con normativas de protección de datos.</li>
+                                <li>Actualizaciones periódicas de seguridad.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Final CTA -->
+    <section id="final-cta" class="bg-light text-center py-5">
+        <div class="container">
+            <h3>¡Listo para Transformar tu Negocio?</h3>
+            <button class="btn btn-warning mt-3">Suscribirte</button>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

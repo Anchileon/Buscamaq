@@ -1,0 +1,114 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+.section {
+    padding: 40px 20px;
+}
+
+#main-landing {
+    background-image: url(../assets/img/27674432-866a-47ee-a950-e204380f7b8e\ \(1\).jpeg);
+}
+
+#main-landing h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#main-landing h2 {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+#main-landing video {
+    max-width: 100%;
+    height: auto;
+}
+
+#herramientas h3, 
+#panel-de-control h3, 
+#reviews h4, 
+#cta-interactivo h3, 
+#cta-interactivo h4, 
+#pricing h3, 
+#preguntas-frecuentes h3 {
+    margin-bottom: 20px;
+}
+
+#reviews img {
+    margin-bottom: 15px;
+}
+
+#controlPanelCarousel .carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+#cta-interactivo video {
+    max-width: 100%;
+    height: auto;
+}
+
+#pricing img {
+    max-width: 100%;
+    height: auto;
+}
+.text-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.text-container > div {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-item {
+    flex: 1;
+    transition: flex 1.5s ease;
+    padding: 5px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 1.5s ease;
+}
+
+
+
+.image-item:hover {
+    flex: 1.8;
+}
+
+.image-gallery:hover .image-item:hover img {
+    transform: scale(1.05);
+}
+
+.divsor {
+    background-image: url(../assets/img/banner468x60glow6_7560.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 58px;
+}
+
+.accordion-body ul {
+    text-align: left;
+}
+
