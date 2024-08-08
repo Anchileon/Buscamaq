@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./Styles/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://buscamaquinaria.com/css/style.css">
     <link rel="stylesheet" href="https://buscamaquinaria.com/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700;900&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link href="./Styles/styles.css" rel="stylesheet">
 
 </head>
 <body>
@@ -26,12 +26,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://buscamaquinaria.com/offer">Ver Catálogo</a>
+                    <a class="btn nav-link m-1" href="aboutus.html" role="button">Sobre Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-link nav-link">Vender</button>
+                    <a class="btn nav-link m-1" href="URL_AQUI" role="button">Precios</a>
                 </li>
                 <li class="nav-item">
+                    <a class="btn btn-warning nav-link m-1" href="URL_AQUI" role="button">Suscribirte</a>
+                </li>
+                <li class="nav-item m-1">
                     <form action="https://buscamaquinaria.com/lang" method="POST" class="form-inline">
                         <input type="hidden" name="_token" value="BRx88hjQhiIrDemFloxKb5M2nEKo2uoXyqfNkUMt">
                         <select class="form-select" name="lang" onchange="this.form.submit()">
@@ -40,23 +43,12 @@
                         </select>
                     </form>
                 </li>
-                <li class="nav-item">
-                    <form action="https://buscamaquinaria.com/currency" method="POST" class="form-inline">
-                        <input type="hidden" name="_token" value="BRx88hjQhiIrDemFloxKb5M2nEKo2uoXyqfNkUMt">
-                        <img src="https://buscamaquinaria.com/images/flags/us.svg" alt="USD" class="img-fluid" style="width:20px;">
-                        <select class="form-select" name="currency" onchange="this.form.submit()">
-                            <option value="USD" selected>USD</option>
-                            <option value="CAD">CAD</option>
-                            <option value="MXN">MXN</option>
-                        </select>
-                    </form>
-                </li>
             </ul>
         </div>
     </nav>
 
     <!-- Section 1: Main Landing -->
-    <section id="main-landing" class="text-center py-5">
+    <section id="main-landing" class="text-center">
         <div class="container">
             <h1>Revolucioná tu Negocio</h1>
             <h2>Descubre la plataforma que puede transformar tus operaciones.</h2>
@@ -80,7 +72,7 @@
 
     <!-- Section 4: Panel de Control -->
     <section class="bg-light text-center">
-            <div class="mb-5 bg-dark view">
+            <div class="mb-5 bg-black view">
                 <h3 class="text-warning">La Solución que tu Negocio Necesita</h3>
             <p class="mb-5 text-light">Imagina poder gestionar toda tu flota, Ventas y Rentas desde una sola plataforma intuitiva. <br>Nuestro sistema no solo te ahorra tiempo, sino que también potencia tus Ventas y mejora la satisfacción de tus clientes.</p>
             </div>
@@ -149,7 +141,7 @@
 </section>
 
 <!-- Section 5: Reviews -->
-<section id="reviews" class="text-center py-5 bg-dark text-center py-5">
+<section id="reviews" class="text-center bg-black text-center py-5">
     <h2 class="mb-4 text-light">Reseñas</h2>
     <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -211,7 +203,7 @@
 </section>
 
 <!-- Sección CTA Interactiva -->
-<section id="cta" class="text-center py-5 position-relative">
+<section id="cta" class="text-center position-relative">
     <div class="">
         <h3 class="mb-4">¡Haz Crecer Tu Negocio!</h3>
         <div class="row d-flex justify-content-around">
@@ -235,11 +227,11 @@
             </div>
         </div>
     </div>
-
+</section>
     <!-- Sección de Precios -->
-<section id="pricing" class="text-center py-5">
+<section id="pricing" class="text-center bg-black">
     <div>
-        <h2 class="m-4">Elige tu Plan</h2>
+        <h2 class="m-4 text-light mb-5">Elige tu Plan</h2>
         <!-- Carrusel para dispositivos móviles -->
         <div id="pricingCarousel" class="carousel slide d-md-none">
             <div class="carousel-inner">
@@ -250,7 +242,7 @@
                             <h4 class="mb-0">Plan Básico</h4>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title mt-3">$16.66/mes</h5>
+                            <h5 class="card-title mt-3">USD$200</h5>
                             <p class="card-text">Ideal para pequeñas empresas.</p>
                             <ul class="list-unstyled card-list">
                                 <li><i class="bi bi-check-circle text-warning"></i> Exposición de Productos</li>
@@ -272,7 +264,7 @@
                             <h4 class="mb-0">Plan Profesional</h4>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title mt-3">$25/mes</h5>
+                            <h5 class="card-title mt-3">USD$300</h5>
                             <p class="card-text">Para empresas grandes y con necesidades avanzadas.</p>
                             <ul class="list-unstyled card-list">
                                 <li><i class="bi bi-check-circle text-warning"></i> Exposición de Productos</li>
@@ -328,7 +320,7 @@
                         <h4 class="mb-0">Plan Básico</h4>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title mt-3">$16.66/mes x 12 meses</h5>
+                        <h5 class="card-title mt-3">USD$200</h5>
                         <p class="card-text">Ideal para pequeñas empresas.</p>
                         <ul class="list-unstyled card-list">
                             <li><i class="bi bi-check-circle text-warning"></i> Exposición de Productos</li>
@@ -350,7 +342,7 @@
                         <h4 class="mb-0">Plan Profesional</h4>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title mt-3">$25.00/mes x 12 meses</h5>
+                        <h5 class="card-title mt-3">USD$300/mes</h5>
                         <p class="card-text">Ideal para pequeñas empresas.</p>
                         <ul class="list-unstyled card-list">
                             <li><i class="bi bi-check-circle text-warning"></i> Exposición de Productos</li>
@@ -392,7 +384,7 @@
 </section>
 
 
-<section id="por-que-elegirnos" class="text-center py-5">
+<section id="por-que-elegirnos" class="text-center">
     <div class="container">
         <h3 class="mb-4">¿POR QUÉ ELEGIRNOS?</h3>
         <div class="accordion" id="accordionExample">
@@ -455,12 +447,43 @@
 </section>
 
     <!-- Section 8: Final CTA -->
-    <section id="final-cta" class="bg-dark text-center py-5">
+    <section id="final-cta" class="bg-light text-center">
         <div class="container">
-            <h3 class="text-light">¿Listo para Transformar tu Negocio?</h3>
+            <h3>¿Listo para Transformar tu Negocio?</h3>
             <button class="btn btn-warning mt-3">Suscribirte</button>
         </div>
     </section>
+    
+        <!-- Footer -->
+        <footer class="footer-section bg-black pt-5">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-4">
+                        <h5 class="text-light">Sobre Nosotros</h5>
+                        <p class="text-warning">Somos una plataforma dedicada a mejorar la conectividad en el sector de la maquinaria pesada, 
+                    facilitando las transacciones entre compradores y vendedores.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-light">Enlaces Útiles</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="text-warning" href="#">Inicio</a></li>
+                            <li><a class="text-warning" href="#">Servicios</a></li>
+                            <li><a class="text-warning" href="#">Sobre Nosotros</a></li>
+                            <li><a class="text-warning" href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-light">Contacto</h5>
+                        <p class="text-light"><i class="bi bi-geo-alt text-warning"></i> Dirección: 123 Calle Falsa, Ciudad, País</p>
+                        <p class="text-light"><i class="bi bi-phone text-warning"></i> Teléfono: +123 456 7890</p>
+                        <p class="text-light"><i class="bi bi-envelope text-warning"></i> Email: contacto@buscamaquinaria.com</p>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <p class="text-light m-0">&copy; 2024 Busca Maquinaria. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
@@ -469,4 +492,5 @@
 AOS.init();
 </script>
 </body>
+
 </html>
