@@ -41,13 +41,9 @@ body {
     padding: 50px 0;
 }
 
-.imagabout {
-    height: 50%;
+.fixed-size {
+    width: 100%;
+    max-width: 600px; /* Ajusta este valor según tus necesidades */
+    height: 375px; /* Ajusta este valor según tus necesidades */
+    object-fit: cover; /* Mantiene la imagen centrada y recortada si es necesario */
 }
-
-@media (min-width: 768px) {
-    .paleft {
-        padding-left: 40px;
-    }
-}
-
