@@ -8,23 +8,12 @@ body {
 
 
 
-#main-landing {
+.main-landing {
     background-image: url(../assets/img/27674432-866a-47ee-a950-e204380f7b8e\ \(1\).jpeg);
+    height: auto;
+    width: 100%;
+    background-size: cover;
 }
-
-#main-landing h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-}
-
-#main-landing h2 {
-    font-size: 0.9rem;
-    margin-top: 20px;
-    color: #fff;
-    text-align: center;
-}
-
 
 #main-landing video {
     max-width: 100%;

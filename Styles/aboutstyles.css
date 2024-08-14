@@ -10,7 +10,7 @@ body {
 /* Estilo general para el #main-landing */
 #main-landing {
     background-image: url(../assets/img/27674432-866a-47ee-a950-e204380f7b8e\ \(1\).jpeg);
-    height: 60vh;
+    height: 100vh;
 }
 
 /* Estilo específico para móviles */
@@ -32,7 +32,7 @@ body {
 
 .values-icon {
     font-size: 2.5rem;
-    color: #ffc107; /* Color para los íconos de valores */
+    color: #ffc107; 
 }
 
 .contact-section {
