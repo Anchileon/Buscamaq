@@ -10,13 +10,13 @@ body {
 /* Estilo general para el #main-landing */
 #main-landing {
     background-image: url(../assets/img/27674432-866a-47ee-a950-e204380f7b8e\ \(1\).jpeg);
-    height: 100vh;
+    height: 70vh;
 }
 
 /* Estilo específico para móviles */
 @media (max-width: 768px) {
     #main-landing {
-        height: 60vh; /* Ajusta la altura para pantallas más pequeñas */
+        height: 70vh; /* Ajusta la altura para pantallas más pequeñas */
         background-position: center; /* Centra la imagen de fondo */
         background-size: cover; /* Asegura que la imagen cubra toda el área */
     }
@@ -47,3 +47,73 @@ body {
     height: 375px; /* Ajusta este valor según tus necesidades */
     object-fit: cover; /* Mantiene la imagen centrada y recortada si es necesario */
 }
+
+/* Ajustes generales para tamaños de pantalla pequeños */
+@media (max-width: 576px) {
+    .fs-1 {
+      font-size: 1.5rem !important; /* Ajustado para móviles */
+    }
+  
+    .fs-2 {
+      font-size: 1rem !important;
+    }
+  
+    .fs-3 {
+      font-size: 1rem !important;
+    }
+  
+    .fs-4 {
+      font-size: 1.125rem !important;
+    }
+  
+    .fs-5 {
+      font-size: 0.9rem !important;
+    }
+  }
+  
+  /* Ajustes para pantallas medianas (tablets) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .fs-1 {
+      font-size: 2rem !important; /* Ajustado para tablets */
+    }
+  
+    .fs-2 {
+      font-size: 1.75rem !important;
+    }
+  
+    .fs-3 {
+      font-size: 1.5rem !important;
+    }
+  
+    .fs-4 {
+      font-size: 1.375rem !important;
+    }
+  
+    .fs-5 {
+      font-size: 1.25rem !important;
+    }
+  }
+  
+  /* Ajustes para pantallas grandes (desktop) */
+  @media (min-width: 769px) {
+    .fs-1 {
+      font-size: calc(1.375rem + 1.5vw) !important; /* Manteniendo el cálculo para desktops */
+    }
+  
+    .fs-2 {
+      font-size: calc(1.325rem + 0.9vw) !important;
+    }
+  
+    .fs-3 {
+      font-size: calc(1.3rem + 0.6vw) !important;
+    }
+  
+    .fs-4 {
+      font-size: calc(1.275rem + 0.3vw) !important;
+    }
+  
+    .fs-5 {
+      font-size: 1.25rem !important;
+    }
+  }
+  

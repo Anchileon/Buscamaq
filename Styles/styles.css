@@ -20,14 +20,7 @@ body {
     height: auto;
 }
 
-#herramientas h3,  
-#reviews h4, 
-#cta-interactivo h3, 
-#cta-interactivo h4, 
-#pricing h3, 
-#preguntas-frecuentes h3 {
-    margin-bottom: 20px;
-}
+
 
 .view{
     height: 30vh;
@@ -98,20 +91,50 @@ body {
 
 
 .image-item:hover {
-    flex: 1.8;
+    flex: 1.2;
 }
 
 .image-gallery:hover .image-item:hover img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .accordion-body ul {
     text-align: left;
 }
 
+#reviews-desktop {
+    background-color: #000; /* Fondo negro */
+    padding: 50px 0; /* Espaciado */
+  }
+  
+  #reviews-desktop .carousel-inner {
+    text-align: center; /* Centrar el contenido */
+  }
+  
+  #reviews-desktop .rounded-circle {
+    width: 150px; /* Tamaño de la imagen del logo */
+    height: 150px;
+  }
+  
+  #reviews-desktop h4 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  
+  #reviews-desktop .stars {
+    margin-top: 10px;
+    color: #FFD700; /* Color dorado para las estrellas */
+  }
+  
+  #reviews-desktop .review-content {
+    font-style: italic;
+    margin: 20px 0;
+  }
+  
+
 /* Estilos para la tarjeta de precios */
 .custom-card {
-    border: 4px solid #ff6f00; /* Bordes color naranja */
+    border: 2px solid #ff6f00; /* Bordes color naranja */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
     transition: transform 0.3s, box-shadow 0.3s;
@@ -247,3 +270,100 @@ body {
 .footer-section{
     text-align: left;
 }
+
+/* Estilo predeterminado del botón */
+.btn-custom {
+    background-color: #ffc107; /* Color de fondo inicial */
+    color: #000; /* Color del texto inicial */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estado hover (cuando el cursor está sobre el botón) */
+.btn-custom:hover {
+    background-color: #e0a800; /* Color de fondo al hacer hover */
+    color: #fff; /* Cambia el color del texto al hacer hover */
+}
+
+/* Estado active (cuando el botón está siendo presionado) */
+.btn-custom:active {
+    background-color: #d39e00; /* Color de fondo al presionar */
+    transform: scale(0.98); /* Efecto de pulsación */
+}
+
+/* Estado focus (cuando el botón recibe foco, útil para accesibilidad) */
+.btn-custom:focus {
+    outline: 3px solid #ffdd57; /* Resaltar el botón con un borde */
+}
+
+
+/* Ajustes generales para tamaños de pantalla pequeños */
+@media (max-width: 576px) {
+    .fs-1 {
+      font-size: 1.5rem !important; /* Ajustado para móviles */
+    }
+  
+    .fs-2 {
+      font-size: 1rem !important;
+    }
+  
+    .fs-3 {
+      font-size: 1rem !important;
+    }
+  
+    .fs-4 {
+      font-size: 1.125rem !important;
+    }
+  
+    .fs-5 {
+      font-size: 0.9rem !important;
+    }
+  }
+  
+  /* Ajustes para pantallas medianas (tablets) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .fs-1 {
+      font-size: 2rem !important; /* Ajustado para tablets */
+    }
+  
+    .fs-2 {
+      font-size: 1.75rem !important;
+    }
+  
+    .fs-3 {
+      font-size: 1.5rem !important;
+    }
+  
+    .fs-4 {
+      font-size: 1.375rem !important;
+    }
+  
+    .fs-5 {
+      font-size: 1.25rem !important;
+    }
+  }
+  
+  /* Ajustes para pantallas grandes (desktop) */
+  @media (min-width: 769px) {
+    .fs-1 {
+      font-size: calc(1.375rem + 1.5vw) !important; /* Manteniendo el cálculo para desktops */
+    }
+  
+    .fs-2 {
+      font-size: calc(1.325rem + 0.9vw) !important;
+    }
+  
+    .fs-3 {
+      font-size: calc(1.3rem + 0.6vw) !important;
+    }
+  
+    .fs-4 {
+      font-size: calc(1.275rem + 0.3vw) !important;
+    }
+  
+    .fs-5 {
+      font-size: 1.10rem !important;
+    }
+  }
+  

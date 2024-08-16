@@ -19,23 +19,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link href="./Styles/styles.css" rel="stylesheet">
-    <head>
-        <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        name": "BuscaMaquinaria",
-        "url": "https://www.buscamaquinaria.com",
-        "logo": "https://www.buscamaquinaria.com/logo.png",
-        "sameAs": [
-            "https://www.facebook.com/BuscaMaquinaria",
-            "https://www.instagram.com/BuscaMaquinaria"
-        ]
-        }
-    </script>
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="https://buscamaquinaria.com">
             <img src="https://buscamaquinaria.com/images/header-logo2.svg" alt="BuscaMaquinaria" class="img-fluid" style="width:10em">
         </a>
@@ -51,7 +38,7 @@
                     <a class="btn nav-link m-1" href="#pricing" role="button">Precios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-warning nav-link m-1" href="#pricing" role="button">Suscribirte</a>
+                    <a class="btn btn-warning btn-custom nav-link m-1" href="#pricing" role="button">Suscribirte</a>
                 </li>
                 <li class="nav-item m-1">
                     <form action="https://buscamaquinaria.com/lang" method="POST" class="form-inline">
@@ -69,11 +56,11 @@
     <!-- Section 1: Main Landing -->
     <section class="text-center main-landing">
         <div class="container">
-            <h1 class="text-light">Revolucioná tu Negocio</h1>
-            <h2 class="text-light">Descubre la plataforma que puede transformar tus operaciones.</h2>
-            <a class="btn btn-warning m-1" href="#pricing" role="button">Suscribirte</a>
-            <div class="mt-4">
-                <video width="100%" autoplay muted loop>
+            <h2 class="text-light fs-1">Revolucioná tu Negocio</h2>
+            <h3 class="text-light fs-3">Descubre la plataforma que puede transformar tus operaciones.</h3>
+            <a class="btn btn-warning btn-custom m-2" href="#pricing" role="button">Suscribirte</a>
+            <div class="mt-4 p-2">
+                <video width="90%" autoplay muted loop controls>
                     <source src="./assets/video/Video1 plataforma.mp4" type="video/mp4">
                     Tu navegador no soporta el elemento de video.
                 </video>
@@ -81,36 +68,33 @@
         </div>
     </section>
 
-    <!-- Section 2: Conocé la Plataforma -->
-    <section id="conoce-la-plataforma" class="bg-light text-center" data-aos="zoom-out-up">
-        <div>
-            <h3 data-aos="flip-up">¿Cansado de perder tiempo gestionando tu maquinaria?</h3>
-        </div>
-    </section>
-    
-
     <!-- Section 4: Panel de Control -->
     <section class="text-center p-0">
-            <div class="bg-black p-3">
+            <div class="bg-black p-5">
                 <h3 class="text-warning fs-2">La Solución que tu Negocio Necesita</h3>
                 <p class="fs-5 text-light ">Imagina poder gestionar toda tu flota, Ventas y Rentas desde una sola plataforma intuitiva. <br>Nuestro sistema no solo te ahorra tiempo, sino que también potencia tus Ventas y mejora la satisfacción de tus clientes.</p>
-                <a class="btn btn-warning" href="#pricing" role="button">Suscribirte</a>
+                <a class="btn btn-warning btn-custom m-3" href="#pricing" role="button">Suscribirte</a>
             </div>
     </section>
-    <section>
+    <section class="p-4">
         <div class="col-12">
-            <div class="text-container text-center row d-none d-md-flex">
-                <div class="col-md-4 ">
-                    <h3>Control de Tus Publicaciones</h3>
-                    <p class="fs-6">Gestiona tus anuncios y ofertas con facilidad. Mantén tu inventario actualizado en tiempo real.</p>
+            <div id="conoce-la-plataforma" class="text-center">
+                <h3 class="fs-4">¿Cansado de perder tiempo gestionando tu maquinaria?</h3>
+            </div>
+            <div class="text-container row d-none d-md-flex pt-4">
+                <div class="col-md-4">
+                    <h3 class="fs-4">Control de Tus Publicaciones</h3>
+                    <p class="fs-5"><i class="bi bi-check-circle text-warning"></i> Gestiona tus anuncios y ofertas con facilidad.</p>
+                    <p class="fs-5"><i class="bi bi-check-circle text-warning"></i> Mantén tu inventario actualizado en tiempo real.</p>
                 </div>
                 <div class="col-md-4">
-                    <h3>Gestión Eficiente de Clientes</h3>
-                    <p class="fs-6">Nunca más pierdas una oportunidad de venta. Responde rápidamente a las consultas.</p>
+                    <h3 class="fs-4">Gestión Eficiente de Clientes</h3>
+                    <p class="fs-5"><i class="bi bi-check-circle text-warning"></i> Nunca más pierdas una oportunidad de venta.</p>
+                    <p class="fs-5"><i class="bi bi-check-circle text-warning"></i> Responde rápidamente a las consultas.</p>
                 </div>
                 <div class="col-md-4">
-                    <h3>Seguimiento de Contacto</h3>
-                    <p class="fs-6">Desde el primer punto de contacto, asignar tareas, y realizar seguimientos personalizados.</p>
+                    <h3 class="fs-4">Seguimiento de Contacto</h3>
+                    <p class="fs-5"><i class="bi bi-check-circle text-warning"></i> Desde el primer punto de contacto, asignar tareas, y realizar seguimientos personalizados.</p>
                 </div>
             </div>
             <div class="d-none d-md-flex justify-content-around">
@@ -129,31 +113,33 @@
         </div>
     </section>
     <!-- Versión para dispositivos móviles -->
-    <section class="d-md-none">
+    <section class="d-md-none p-0">
     <div>
         <div class="row m-2" data-aos="zoom-out-right">
             <div class="col-12 d-flex flex-column align-items-center">
-                <div class="text-center mb-3">
-                    <h3>Control de Tus Publicaciones</h3>
-                    <p>Gestiona tus anuncios y ofertas con facilidad. Mantén tu inventario actualizado en tiempo real.</p>
+                <div class="mb-3">
+                    <h3 class="text-center fs-4">Control de Tus Publicaciones</h3>
+                    <p class="fs-5"><i class="bi bi-check-circle text-warning"></i> Gestiona tus anuncios y ofertas con facilidad.</p>
+                    <p class="fs-5"><i class="bi bi-check-circle text-warning"></i> Mantén tu inventario actualizado en tiempo real.</p>
                 </div>
                 <img src="./assets/img/Carrousel1.png" class="img-fluid shadow-lg mb-5" alt="Image 1">
             </div>
         </div>
         <div class="row m-2" data-aos="zoom-out-left">
             <div class="col-12 d-flex flex-column align-items-center">
-                <div class="text-center mb-3">
-                    <h3>Gestión Eficiente de Clientes</h3>
-                    <p>Nunca más pierdas una oportunidad de venta. Responde rápidamente a las consultas.</p>
+                <div class="mb-3">
+                    <h3 class="text-center fs-4">Gestión Eficiente de Clientes</h3>
+                    <p class="fs-5"><i class="bi bi-check-circle text-warning"></i> Nunca más pierdas una oportunidad de venta.</p>
+                    <p class="fs-5"><i class="bi bi-check-circle text-warning"></i> Responde rápidamente a las consultas.</p>
                 </div>
                 <img src="./assets/img/Carrousel2.png" class="img-fluid shadow-lg mb-5" alt="Image 2">
             </div>
         </div>
         <div class="row m-2" data-aos="zoom-out-right">
             <div class="col-12 d-flex flex-column align-items-center">
-                <div class="text-center m-3">
-                    <h3>Seguimiento de Contacto</h3>
-                    <p>Desde el primer punto de contacto, asignar tareas, y realizar seguimientos personalizados.</p>
+                <div class="m-3">
+                    <h3 class="text-center fs-4">Seguimiento de Contacto</h3>
+                    <p class="fs-5"><i class="bi bi-check-circle text-warning"></i> Desde el primer punto de contacto, asignar tareas, y realizar seguimientos personalizados.</p>
                 </div>
                 <img src="./assets/img/Carrousel3.png" class="img-fluid shadow-lg" alt="Image 3">
             </div>
@@ -163,7 +149,7 @@
 </section>
 
 <!-- Section 5: Reviews -->
-<section id="reviews" class="text-center bg-black text-center py-5">
+<section id="reviews" class="text-center bg-black text-center py-5 d-md-none">
     <h2 class="mb-4 text-light">Reseñas</h2>
     <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -224,33 +210,107 @@
     </div>
 </section>
 
+<section id="reviews-desktop" class="text-center bg-black text-center py-5 d-none d-md-block">
+    <h2 class="mb-4 text-light">Reseñas</h2>
+    <div id="reviewsCarouselDesktop" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Reseña 1 -->
+            <div class="carousel-item active">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-3">
+                        <img src="./assets/img/logoLYM.jpg" class="rounded-circle mb-3 img-fluid" alt="Leon y Manada Logo">
+                        <div class="stars">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-start">
+                        <h4 class="text-light text-center">León y Manada</h4>
+                        <p class="review-content text-light text-center">"Plataforma super intuitiva que me ayudó a organizarme para vender y enseñar mis productos."</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Reseña 2 -->
+            <div class="carousel-item">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-3">
+                        <img src="./assets/img/logoempresa2.jpeg" class="rounded-circle mb-3 img-fluid" alt="Empresa 2 Logo">
+                        <div class="stars">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-start">
+                        <h4 class="text-light text-center">Empresa 2</h4>
+                        <p class="review-content text-light text-center">"Excelente plataforma que facilita la gestión de nuestros productos y clientes."</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Reseña 3 -->
+            <div class="carousel-item">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-3">
+                        <img src="./assets/img/logoempresa3.jpeg" class="rounded-circle mb-3 img-fluid" alt="Empresa 3 Logo">
+                        <div class="stars">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-start">
+                        <h4 class="text-light text-center">Empresa 3</h4>
+                        <p class="review-content text-light text-center">"Una herramienta indispensable para nuestra gestión diaria."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#reviewsCarouselDesktop" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#reviewsCarouselDesktop" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </a>
+    </div>
+</section>
+
+
 <!-- Sección CTA Interactiva -->
 <section id="cta" class="text-center position-relative">
     <div class="">
-        <h3 class="mb-4">¡Haz Crecer Tu Negocio!</h3>
+        <h3 class="mb-4 fs-3">¡Haz Crecer Tu Negocio!</h3>
         <div class="row d-flex justify-content-around">
             <!-- Caja Publicar -->
             <div class="col-md-4" data-aos="fade-down-right" data-aos-delay="400">
-                <h4>Publicá</h4>
-                <p>Comparte tus productos con el mundo.</p>
+                <h4 class="fs-3">Publicá</h4>
+                <p class="fs-5"><i class="bi bi-check-circle text-warning"></i> Comparte tus productos con el mundo.</p>
                 <img src="./assets/img/publica.gif" class="cta-img m-1 p-5" alt="Publicar" />
             </div>
             <!-- Caja Compartir -->
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                <h4>Compartí</h4>
-                <p>Haz que tus productos lleguen a más personas.</p>
+                <h4 class="fs-3">Compartí</h4>
+                <p class="fs-5"><i class="bi bi-check-circle text-warning"></i> Haz que tus productos lleguen a más personas.</p>
                 <img src="./assets/img/publica.gif" class="cta-img m-1 p-5" alt="Compartir" />
             </div>
             <!-- Caja Vender -->
             <div class="col-md-4" data-aos="fade-down-left" data-aos-delay="800">
-                <h4>Vendé</h4>
-                <p>Convierte tus visitas en clientes y en ventas.</p>
+                <h4 class="fs-3">Vendé</h4>
+                <p class="fs-5"><i class="bi bi-check-circle text-warning"></i> Convierte tus visitas en clientes y en ventas.</p>
                 <img src="./assets/img/publica.gif" class="cta-img m-1 p-5" alt="Vender" />
             </div>
         </div>
     </div>
 </section>
-    <!-- Sección de Precios -->
+<!-- Sección de Precios -->
 <section id="pricing" class="text-center bg-black">
     <div>
         <h2 class=" text-light mb-5">Elige tu Plan</h2>
@@ -269,9 +329,9 @@
                             <ul class="list-unstyled card-list">
                                 <li><i class="bi bi-check-circle text-warning"></i> Exposición de Productos</li>
                                 <li><i class="bi bi-check-circle text-warning"></i> Sucursal Online</li>
-                                <li><i class="bi bi-check-circle text-warning"></i> Botón de Contacto</li><li><i class="bi bi-check-circle text-warning"></i> Exposición de Productos</li>
+                                <li><i class="bi bi-check-circle text-warning"></i> Botón de Contacto</li>
                                 <li><i class="bi bi-check-circle text-warning"></i> Agil publicación y Compartir en Redes</li>
-                                <li><i class="bi bi-check-circle text-warning"></i> Catálogo Personalizado</li><li><i class="bi bi-check-circle text-warning"></i> Exposición de Productos</li>
+                                <li><i class="bi bi-check-circle text-warning"></i> Catálogo Personalizado</li>
                                 <li><i class="bi bi-check-circle text-warning"></i> Tablero de Gestión de Productos y Clientes</li>
                                 <li><i class="bi bi-check-circle text-warning"></i> Hasta 20 Equipos publicados</li>
                             </ul>
@@ -295,7 +355,6 @@
                                 <li><i class="bi bi-check-circle text-warning"></i> Catálogo Personalizado</li>
                                 <li><i class="bi bi-check-circle text-success"></i> Tablero de Gestión de Productos, Clientes y Empleados</li>
                                 <li><i class="bi bi-check-circle text-success"></i> Plataforma Multiusuario</li>
-                                <li><i class="bi bi-check-circle text-success"></i> Plataforma Multiusuario</li>
                                 <li><i class="bi bi-check-circle text-success"></i> Hasta 100 Equipos publicados</li>
                             </ul>
                             <a href="#" class="btn btn-warning mb-3">Comprar Ahora</a>
@@ -317,9 +376,26 @@
                                 <li><i class="bi bi-check-circle text-success"></i> Más Usuarios</li>
                                 <li><i class="bi bi-check-circle text-success"></i> Integración de la plataforma a medida</li>
                                 <li><i class="bi bi-check-circle text-success"></i> Funciones Especiales</li>
-    
                             </ul>
                             <a href="#" class="btn btn-warning mb-3">Contactarse</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plan Estándar -->
+                <div class="carousel-item">
+                    <div class="card border-warning custom-card">
+                        <div class="card-header bg-warning text-white">
+                            <h4 class="mb-0">Plan Estándar</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">USD$100</h5>
+                            <p class="card-text">Para necesidades básicas de una sola publicación.</p>
+                            <ul class="list-unstyled card-list">
+                                <li><i class="bi bi-check-circle text-warning"></i> Exposición de un Producto</li>
+                                <li><i class="bi bi-check-circle text-warning"></i> Sucursal Online</li>
+                                <li><i class="bi bi-check-circle text-warning"></i> Botón de Contacto</li>
+                            </ul>
+                            <a href="#" class="btn btn-warning mb-3">Comprar Ahora</a>
                         </div>
                     </div>
                 </div>
@@ -333,10 +409,29 @@
                 <span class="visually-hidden">Siguiente</span>
             </a>
         </div>
+
         <!-- Planes en fila para pantallas grandes -->
-        <div class="row d-none d-md-flex">
+        <div class="row d-none d-md-flex m-1">
+            <!-- Plan Estándar -->
+            <div class="col-md-3 mb-4" data-aos="zoom-in-left">
+                <div class="card border-warning custom-card shadow">
+                    <div class="card-header bg-warning text-white">
+                        <h4 class="mb-0">Plan Estándar</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3">USD$100</h5>
+                        <p class="card-text">Para necesidades básicas de una sola publicación.</p>
+                        <ul class="list-unstyled card-list">
+                            <li><i class="bi bi-check-circle text-warning"></i> Exposición de un Producto</li>
+                            <li><i class="bi bi-check-circle text-warning"></i> Sucursal Online</li>
+                            <li><i class="bi bi-check-circle text-warning"></i> Botón de Contacto</li>
+                        </ul>
+                        <a href="#" class="btn btn-warning card-btn mb-3">Comprar Ahora</a>
+                    </div>
+                </div>
+            </div>
             <!-- Plan Básico -->
-            <div class="col-md-4 mb-4" data-aos="zoom-in-right" data-aos-delay="400">
+            <div class="col-md-3 mb-4" data-aos="zoom-in-right">
                 <div class="card border-warning custom-card shadow">
                     <div class="card-header bg-warning text-white">
                         <h4 class="mb-0">Plan Básico</h4>
@@ -358,7 +453,7 @@
                 </div>
             </div>
             <!-- Plan Profesional -->
-            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="600">
+            <div class="col-md-3 mb-4" data-aos="zoom-in-left" >
                 <div class="card border-warning custom-card shadow">
                     <div class="card-header bg-warning text-white">
                         <h4 class="mb-0">Plan Profesional</h4>
@@ -373,7 +468,6 @@
                             <li><i class="bi bi-check-circle text-warning"></i> Catálogo Personalizado</li>
                             <li><i class="bi bi-check-circle text-success"></i> Tablero de Gestión de Productos, Clientes y Empleados</li>
                             <li><i class="bi bi-check-circle text-success"></i> Plataforma Multiusuario</li>
-                            <li><i class="bi bi-check-circle text-success"></i> Plataforma Multiusuario</li>
                             <li><i class="bi bi-check-circle text-success"></i> Hasta 100 Equipos publicados</li>
                         </ul>
                         <a href="#" class="btn btn-warning card-btn mb-3">Comprar Ahora</a>
@@ -381,7 +475,7 @@
                 </div>
             </div>
             <!-- Plan Premium -->
-            <div class="col-md-4 mb-4" data-aos="zoom-in-left" data-aos-delay="800" >
+            <div class="col-md-3 mb-4" data-aos="zoom-in-right">
                 <div class="card border-warning custom-card shadow">
                     <div class="card-header bg-warning text-white">
                         <h4 class="mb-0">Plan Premium</h4>
@@ -395,9 +489,8 @@
                             <li><i class="bi bi-check-circle text-success"></i> Más Usuarios</li>
                             <li><i class="bi bi-check-circle text-success"></i> Integración de la plataforma a medida</li>
                             <li><i class="bi bi-check-circle text-success"></i> Funciones Especiales</li>
-
                         </ul>
-                        <a href="#" class="btn btn-warning mb-3">Contactarse</a>
+                        <a href="#" class="btn btn-warning card-btn mb-3">Contactarse</a>
                     </div>
                 </div>
             </div>
@@ -408,7 +501,7 @@
 
 <section id="por-que-elegirnos" class="text-center">
     <div class="container">
-        <h3 class="mb-4">¿POR QUÉ ELEGIRNOS?</h3>
+        <h3 class="mb-4">Preguntas Frecuentes</h3>
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
