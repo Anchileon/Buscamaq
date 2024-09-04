@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(252, 252, 252) !important;
   font-family: "montserrat", sans-serif;
   overflow-x: hidden;
 }
@@ -58,7 +58,6 @@ body {
   padding: 0 10px; /* Añade un pequeño margen alrededor del texto */
 }
 
-
 .rounds {
   border-radius: 3rem !important;
 }
@@ -73,14 +72,15 @@ body {
   }
 }
 
-.solucion1{
+.solucion1 {
   background-color: #000000;
 }
-.solucion2{
+.solucion2 {
   background-color: #ffd03c;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   width: 3rem; /* Ancho del botón */
   height: 3rem; /* Altura del botón */
   display: flex;
@@ -102,11 +102,13 @@ body {
   right: 0; /* Posicionar a la derecha */
 }
 
-.carousel-control-prev:hover, .carousel-control-next:hover {
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
   background-color: rgba(0, 0, 0, 0.8); /* Cambio de color al pasar el mouse */
 }
 
-.carousel-control-prev:focus, .carousel-control-next:focus {
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
   outline: none; /* Eliminar el borde de enfoque predeterminado */
 }
 
