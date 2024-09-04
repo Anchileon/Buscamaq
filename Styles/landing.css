@@ -123,7 +123,7 @@ body {
 /* Tamaño para dispositivos móviles */
 @media (max-width: 576px) {
   .overlay-carousel {
-    width: 300px; /* Tamaño para pantallas pequeñas */
+    width: 370px; /* Tamaño para pantallas pequeñas */
   }
 }
 
@@ -188,4 +188,37 @@ body {
 .carousel-item img {
   width: 100%;
   height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Fondo de la sección de planes */
+.plans-section {
+  background: linear-gradient(to bottom, #333333, #111111);
+  color: #fff;
+}
+
+/* Estilo de las tarjetas de planes */
+.plan-card {
+  background-color: #292929;
+  border: none;
+}
+
+.plan-card h4, .plan-card h5, .plan-card ul {
+  color: #fff;
+}
+
+.plan-card .card-footer {
+  background-color: transparent;
+  border-top: none;
+}
+
+/* Botón con efecto de sombra */
+.plan-card .btn-warning {
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.plan-card .btn-warning:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(255, 193, 7, 0.5);
 }
