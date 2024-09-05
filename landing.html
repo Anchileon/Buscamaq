@@ -911,6 +911,7 @@
       
       
     <section>
+      
       <div class="container-fluid m-0">
         <!-- Header Section -->
         <div class="text-center">
@@ -920,8 +921,99 @@
           <p class="mt-3 text-muted">Contáctanos ahora y descubre cómo nuestro software de última generación puede ahorrarte tiempo y reducir costos mientras aumentas tus ventas.</p>
         </div>
       
-        <!-- Plans Section -->
-        <div class="plans-section text-center py-5">
+        <div class="plans-section text-center py-5 d-md-none">
+          <h2 class="mb-5 text-warning subedits">Elije tu plan</h2>
+    
+          <!-- Carrusel de cards para dispositivos móviles -->
+          <div id="planCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Plan Básico -->
+              <div class="carousel-item active">
+                <div class="card plan-card shadow h-100">
+                  <div class="card-body">
+                    <h4 class="card-title">Plan Básico</h4>
+                    <h5 class="card-subtitle mb-3 text-muted">$65 /mo</h5>
+                    <ul class="list-unstyled">
+                      <li>• Publicación de 1 Producto / Servicio</li>
+                      <li>• Administra tu Oferta</li>
+                      <li>• Gestión de Clientes de BMAQ</li>
+                      <li>• Comparte tu Oferta con la red de vendedores de BMAQ</li>
+                      <li>• 1 Usuario</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a href="#" class="btn btn-warning">Comprar ahora</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Plan Estándar -->
+              <div class="carousel-item">
+                <div class="card plan-card shadow h-100">
+                  <div class="card-body">
+                    <h4 class="card-title">Plan Pro</h4>
+                    <h5 class="card-subtitle mb-3 text-muted">$200 /mo</h5>
+                    <ul class="list-unstyled">
+                      <li>• Todo lo del Plan Básico</li>
+                      <li>• Gestiona Clientes de Afuera de BMAQ</li>
+                      <li>• Hasta 30 Productos / Servicios </li>
+                    </ul>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a href="#" class="btn btn-warning">Comprar ahora</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Plan Profesional -->
+              <div class="carousel-item">
+                <div class="card plan-card shadow h-100">
+                  <div class="card-body">
+                    <h4 class="card-title">Plan Empresarial</h4>
+                    <h5 class="card-subtitle mb-3 text-muted">$300 /mo</h5>
+                    <ul class="list-unstyled">
+                      <li>• Todo lo del Plan Estándar</li>
+                      <li>• Soporte dedicado</li>
+                      <li>• Hasta 50 Productos / Servicios</li>
+                      <li>• 10 Usuarios</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a href="#" class="btn btn-warning">Comprar ahora</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Plan Enterprise -->
+              <div class="carousel-item">
+                <div class="card plan-card shadow h-100">
+                  <div class="card-body">
+                    <h4 class="card-title">Plan Partner</h4>
+                    <h5 class="card-subtitle mb-3 text-muted">Contacta un asesor</h5>
+                    <ul class="list-unstyled">
+                      <li>• Todo lo del Plan Empresarial</li>
+                      <li>• Accedé a las ofertas de BMAQ</li>
+                      <li>• Funciones extra a la medida</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a href="#" class="btn btn-warning">Contáctanos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#planCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#planCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    
+          
+
+        <!-- Plans Section escritorio-->
+        <div class="plans-section text-center py-5 d-none d-md-block">
           <h2 class="mb-5 text-warning subedits">Elije tu plan</h2>
           <div class="row row-cols-1 row-cols-md-4 g-4">
             <!-- Plan Básico -->
@@ -1000,6 +1092,165 @@
       </div>
       
     </section>
+    <section id="por-que-elegirnos" class="text-center">
+      <div class="container">
+        <h3 class="mb-4">Preguntas Frecuentes</h3>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                ¿Cómo puedo registrar mi empresa y empezar a vender en la
+                plataforma?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body text-left">
+                <ul>
+                  <li>Regístrate haciendo clic en "Registrarse".</li>
+                  <li>
+                    Completa el formulario con la información de tu empresa.
+                  </li>
+                  <li>
+                    Verifica tu cuenta a través del correo electrónico recibido.
+                  </li>
+                  <li>Configura tu perfil empresarial.</li>
+                  <li>Publica tus productos desde el panel de control.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                ¿Qué características de gestión de clientes ofrece la
+                plataforma?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body text-left">
+                <ul>
+                  <li>Panel de control centralizado.</li>
+                  <li>Seguimiento de negociaciones.</li>
+                  <li>Asignación de usuarios a clientes.</li>
+                  <li>Gestión de leads de la red y externos.</li>
+                  <li>Historial completo de interacciones con clientes.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                ¿Qué medidas de seguridad están implementadas para proteger mis
+                datos en la plataforma?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body text-left">
+                <ul>
+                  <li>Cifrado SSL.</li>
+                  <li>Autenticación de dos factores (2FA).</li>
+                  <li>Monitorización 24/7 de actividades sospechosas.</li>
+                  <li>Cumplimiento con normativas de protección de datos.</li>
+                  <li>Actualizaciones periódicas de seguridad.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Final CTA -->
+    <section id="final-cta" class="bg-light text-center">
+      <div class="container">
+        <h3>Esta es tu oportunidad para mejorar tu negocio</h3>
+        <p>No esperes más ¡Contactá ahora mismo con nosotros!</p>
+        <a class="btn btn-warning m-1" href="#pricing" role="button"
+          >Empezar</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-black pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="text-light">Sobre Nosotros</h5>
+            <p class="text-warning">
+              Somos una plataforma dedicada a mejorar la conectividad en el
+              sector de la maquinaria pesada, facilitando las transacciones
+              entre compradores y vendedores.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-light">Enlaces Útiles</h5>
+            <ul class="list-unstyled">
+              <li><a class="text-warning" href="#">Inicio</a></li>
+              <li><a class="text-warning" href="#">Servicios</a></li>
+              <li><a class="text-warning" href="#">Sobre Nosotros</a></li>
+              <li><a class="text-warning" href="#">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-light">Contacto</h5>
+            <p class="text-light">
+              <i class="bi bi-geo-alt text-warning"></i> Dirección: 123 Calle
+              Falsa, Springfield, EEUU.
+            </p>
+            <p class="text-light">
+              <i class="bi bi-phone text-warning"></i> Teléfono: +123 456 7890
+            </p>
+            <p class="text-light">
+              <i class="bi bi-envelope text-warning"></i> Email:
+              contacto@buscamaquinaria.com
+            </p>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <p class="text-light m-0">
+            &copy; 2024 Busca Maquinaria. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
     <script>
       document.querySelectorAll(".zoomable").forEach((img) => {
         img.addEventListener("mousemove", (e) => {
