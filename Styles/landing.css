@@ -192,13 +192,17 @@ body {
 
 /* Fondo de la sección de planes */
 .plans-section {
-  background: linear-gradient(to bottom, #333333, #111111);
-  color: #fff;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../assets/img/b6a7d6c1e69e3acbcbc87fafecfc4629.jpeg);
+  background-size: cover;
+  background-position: center;
 }
-
 /* Estilo de las tarjetas de planes */
 .plan-card {
-  background-color: #292929;
+  background-color: #292929b0;
   border: none;
 }
 
