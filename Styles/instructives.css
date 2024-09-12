@@ -18,3 +18,6 @@ body {
   height: 70vh;
   align-content: center;
 }
+section {
+  padding: 0;
+}
