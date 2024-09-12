@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://buscamaquinaria.com/css/style.css">
+    <link rel="stylesheet" href="https://buscamaquinaria.com/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700;900&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link href="./Styles/instructives.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="https://buscamaquinaria.com">
+          <img
+            src="https://buscamaquinaria.com/images/header-logo2.svg"
+            alt="BuscaMaquinaria"
+            class="img-fluid"
+            style="width: 10em"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="btn nav-link m-1" href="aboutus.html" role="button"
+                >Sobre Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="btn nav-link m-1" href="index.html#pricing" role="button"
+                >Precios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-warning nav-link m-1"
+                href="index.html#pricing"
+                role="button"
+                >Suscribirte</a
+              >
+            </li>
+            <!-- Dropdown para Instructivos -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle m-1"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Conoce la Plataforma
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="Publicaciones.html"
+                    >Publicaciónes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ofertas.html"
+                    >Panel de Ofertas</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="clientes.html"
+                    >Panel de Clientes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Publicaciones.html"
+                    >Personalización</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item m-1">
+              <form
+                action="https://buscamaquinaria.com/lang"
+                method="POST"
+                class="form-inline"
+              >
+                <input
+                  type="hidden"
+                  name="_token"
+                  value="BRx88hjQhiIrDemFloxKb5M2nEKo2uoXyqfNkUMt"
+                />
+                <select
+                  class="form-select"
+                  name="lang"
+                  onchange="this.form.submit()"
+                >
+                  <option value="ESmx" selected>ES</option>
+                  <option value="en">EN</option>
+                </select>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+        <!-- Sección de cabecera -->
+        <header class="header-section text-center" id="main-landing">
+            <div>
+                <h1 class="text-light fs-1 m-3 fw-bolder">Gestioná tus Ofertas</h1>
+                <p class="text-light fs-3 fs-md-5 m-4">Panel simple donde podrás crear tus ofertas, editarlas y gestionarlas en un solo lugar.</p>
+                <a class="btn btn-warning btn-lg" href="index.html#pricing" role="button">Suscribirte</a>
+                </div>
+        </header>
+
+        <section class="py-5 bg-light">
+            <div class="container pt-4 pb-4">
+                <div class="row align-items-center text-md-left text-center">
+                    <!-- Texto primero en pantallas móviles -->
+                    <div class="col-md-6 order-md-2 order-1">
+                        <h2>Cargá tu Oferta</h2>
+                        <p class="pb-3">Cargá tus ofertas y editalas para que los visitantes puedan conocer tus ofertas al detalle y estén más informados para generar más contactos.</p>
+                    </div>
+                    <!-- Video después del texto en pantallas móviles -->
+                    <div class="col-md-6 order-md-1 order-2">
+                        <video class="img-fluid mb-md-0 p-3 fixed-size" controls data-aos="">
+                            <source src="./assets/video/Video5Newpublic.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de videos.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <section class="py-5 bg-light">
+                <div class="container pt-4">
+                    <div class="row align-items-center text-md-left text-center">
+                        <!-- Texto primero en pantallas móviles, video después -->
+                        <div class="col-md-6 order-md-1 order-1">
+                            <h2>Gestioná tus Publicaciones</h2>
+                            <p class="pb-3">Gestioná tus publicaciones con tus preferencias para compartirlas, promocionarlas o editarlas.</p>
+                        </div>
+                        <!-- Video después del texto en pantallas móviles -->
+                        <div class="col-md-6 order-md-1 order-2">
+                            <video class="img-fluid mb-md-0 p-3 fixed-size" controls data-aos="">
+                                <source src="./assets/video/Video3GestiónStock.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de videos.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+                    <section class="bg-warning p-2">
+                        <div class="text-center p-2">
+                            <!-- Contenedor principal con flexbox -->
+                            <div class="row mb-3">
+                                <!-- Agrupar cada par h5 y p en un contenedor -->
+                                <div class="col-md-3 d-flex flex-column align-items-center mb-4 mb-md-0">
+                                    <div class="values-icon mb-3">
+                                        <img src="./assets/img/Captura de pantalla 2024-09-12 114422.png" alt="Icono de innovación" class="img-fluid rounded-circle" style="width: 80px; height: 80px;" />
+                                    </div>
+                                    <h5 class="fs-4">Publica Tu Oferta</h5>
+                                    <p>Desde el panel de ofertas de la plataforma, publica tu oferta en el sitio o despublica la misma de acuerdo a tus necesidades.</p>
+                                </div>
+                                <div class="col-md-3 d-flex flex-column align-items-center mb-4 mb-md-0">
+                                    <div class="values-icon mb-3">
+                                        <img src="./assets/img/Captura de pantalla 2024-09-12 114448.png" alt="Icono de innovación" class="img-fluid rounded-circle" style="width: 80px; height: 80px;" />
+                                    </div>
+                                    <h5 class="fs-4">Comparte con Usuarios</h5>
+                                    <p>Comparte con la red de Usuarios de Buscamaq tu Oferta para que otros vendedores puedan ofrecerla por ti.</p>
+                                </div>
+                                <div class="col-md-3 d-flex flex-column align-items-center mb-4 mb-md-0">
+                                    <div class="values-icon mb-3">
+                                        <img src="./assets/img/Captura de pantalla 2024-09-12 114514.png" alt="Icono de innovación" class="img-fluid rounded-circle" style="width: 80px; height: 80px;" />
+                                    </div>
+                                    <h5 class="fs-4">Carga Archivos</h5>
+                                    <p>Cargá archivos que complementen tus ofertas, tenelos a mano para compartir los archivos importantes con tus clientes.</p>
+                                </div>
+                                <div class="col-md-3 d-flex flex-column align-items-center mb-4 mb-md-0">
+                                    <div class="values-icon mb-3">
+                                        <img src="./assets/img/Captura de pantalla 2024-09-12 114527.png" alt="Icono de innovación" class="img-fluid rounded-circle" style="width: 80px; height: 80px;" />
+                                    </div>
+                                    <h5 class="fs-4">Promociona tu Oferta</h5>
+                                    <p>Desde el panel de ofertas de la plataforma, publica tu oferta en el sitio o despublica la misma de acuerdo a tus necesidades.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+        <!-- Sección de Contacto -->
+        <section class="contact-section text-center p-5">
+            <div class="container">
+                <h2 class="p-2">Conocé nuestros Planes</h2>
+                <p class="p-2">Obtén ahora más información sobre nuestros servicios y cómo podemos ayudarte a potenciarte.</p>
+                <a href="#" class="btn btn-warning btn-lg">Planes</a>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer class="footer-section bg-black pt-5">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-4">
+                        <h5 class="text-light">Sobre Nosotros</h5>
+                        <p class="text-warning">Somos una plataforma dedicada a mejorar la conectividad en el sector de la maquinaria pesada, 
+                    facilitando las transacciones entre compradores y vendedores.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-light">Enlaces Útiles</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="text-warning" href="#">Inicio</a></li>
+                            <li><a class="text-warning" href="#">Servicios</a></li>
+                            <li><a class="text-warning" href="#">Sobre Nosotros</a></li>
+                            <li><a class="text-warning" href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-light">Contacto</h5>
+                        <p class="text-light"><i class="bi bi-geo-alt text-warning"></i> Dirección: 123 Calle Falsa, Ciudad, País</p>
+                        <p class="text-light"><i class="bi bi-phone text-warning"></i> Teléfono: +123 456 7890</p>
+                        <p class="text-light"><i class="bi bi-envelope text-warning"></i> Email: contacto@buscamaquinaria.com</p>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <p class="text-light m-0">&copy; 2024 Busca Maquinaria. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
+
+</html>
