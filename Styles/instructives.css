@@ -18,6 +18,28 @@ body {
   height: 70vh;
   align-content: center;
 }
+#main-landing2 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.634) 50%,
+      rgba(0, 0, 0, 0.6) 55%
+    ),
+    url("../assets/img/mision.jpeg");
+  background-size: cover;
+  height: 70vh;
+  align-content: center;
+}
+#main-landing3 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.634) 50%,
+      rgba(0, 0, 0, 0.6) 55%
+    ),
+    url("../assets/img/vision.jpeg");
+  background-size: cover;
+  background-position: center
+  ;
+  height: 70vh;
+  align-content: center;
+}
 section {
   padding: 0;
 }
