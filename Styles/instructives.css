@@ -1,11 +1,10 @@
-/* Estilos Generales de tu Landing Page */
 body {
-  font-family: "montserrat", sans-serif; /* Fuente usada en tu landing page */
-  background-color: #f5f5f5; /* Color de fondo de tu landing */
+  font-family: "montserrat", sans-serif;
+  background-color: #f5f5f5;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Evitar scroll horizontal */
-  color: #000000; /* Color de texto principal */
+  overflow-x: hidden;
+  color: #000000; 
 }
 
 #main-landing {
@@ -42,4 +41,37 @@ body {
 }
 section {
   padding: 0;
+}
+
+.responsive-img {
+  width: 8vw;
+  height: auto;
+  max-width: 200px;
+}
+
+
+@media (max-width: 768px) {
+  .responsive-img {
+    width: 30vw;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-img {
+    width: 40vw;
+    max-width: 120px;
+  }
+}
+
+.bg-section {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(../assets/img/b6a7d6c1e69e3acbcbc87fafecfc4629.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.text {
+  color: #f5f5f5;
 }
