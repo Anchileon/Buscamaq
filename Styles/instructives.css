@@ -39,6 +39,19 @@ body {
   height: 70vh;
   align-content: center;
 }
+#main-landing4 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.634) 50%,
+      rgba(0, 0, 0, 0.6) 55%
+    ),
+    url("../assets/img/1892648-3510993.jpg");
+  background-size: cover;
+  background-position: center 70%; /* Ajusta la posición vertical al 60% */
+  height: 70vh;
+  align-content: center;
+}
+
+
 section {
   padding: 0;
 }
